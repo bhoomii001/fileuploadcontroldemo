@@ -16,6 +16,16 @@
         <div class="auto-style1">
             file upload demo program <br />
             <br />
+            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox2" ErrorMessage="*" ForeColor="#FF6666"></asp:RequiredFieldValidator>
+            <br />
+            <br />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Button" />
+            <br />
+            <br />
+            <br />
+            <br />
             <br />
             <asp:FileUpload ID="FileUpload1" runat="server" />
             <br />
