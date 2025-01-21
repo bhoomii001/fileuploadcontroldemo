@@ -14,6 +14,11 @@
 <body>
     <form id="form1" runat="server">
         <div class="auto-style1">
+            WELCOME TO HOME<br />
+            <br />
+
+            <asp:Button ID="logoutbtn"  Text="LOGOUT" runat="server" OnClick="logoutbtn_Click" />
+            <br />
             file upload demo program <br />
             <br />
             <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>

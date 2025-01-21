@@ -24,6 +24,15 @@ namespace fileuploadcontroldemo
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// logoutbtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button logoutbtn;
+
+        /// <summary>
         /// TextBox2 control.
         /// </summary>
         /// <remarks>

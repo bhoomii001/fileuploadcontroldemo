@@ -11,7 +11,7 @@ namespace fileuploadcontroldemo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Response.Write(Session["Id"]);
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -29,6 +29,11 @@ namespace fileuploadcontroldemo
             {
                 Response.Redirect("error");
             }
+        }
+
+        protected void logoutbtn_Click(object sender, EventArgs e)
+        {
+            Session.RemoveAll();
         }
     }
 }

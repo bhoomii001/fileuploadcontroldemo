@@ -67,13 +67,38 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\Database2.mdf" />
+    <Content Include="App_Data\Database2_log.ldf">
+      <DependentUpon>Database2.mdf</DependentUpon>
+    </Content>
+    <Content Include="loginform.aspx" />
+    <Content Include="multicontrol.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
     <Content Include="WebForm3.aspx" />
     <Content Include="WebForm4.aspx" />
+    <Content Include="WebForm5.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="loginform.aspx.cs">
+      <DependentUpon>loginform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginform.aspx.designer.cs">
+      <DependentUpon>loginform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="multicontrol.aspx.cs">
+      <DependentUpon>multicontrol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="multicontrol.aspx.designer.cs">
+      <DependentUpon>multicontrol.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -102,6 +127,13 @@
     </Compile>
     <Compile Include="WebForm4.aspx.designer.cs">
       <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm5.aspx.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm5.aspx.designer.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
